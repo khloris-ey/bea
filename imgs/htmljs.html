@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                display: grid;
+                place-items: center;
+                position: absolute;
+                top:10px;
+                left: 350px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript</h1>
+        <p id="demo">JS can change HTML content</p>
+        
+        <button type="button" onclick='document.getElementById("demo").innerHTML="Hello js"'>Click here!</button>
+    
+        <h3>JavaScript change image</h3>
+
+        <button onclick="document.getElementById('image1').src='https:\\www.w3schools.com/js/pic_bulbon.gif'"> turn on</button>
+        <img id="image1" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width: 100px;">
+
+        <button onclick="document.getElementById('image1').src='https:\\www.w3schools.com/js/pic_bulboff.gif'">turn off</button><br>
+    
+        <p style="font-size: 30px;">Shows and Hide</p>
+        <p id="demo1" style="font-size: large;">٩꒰ʘʚʘ๑꒱۶</p>
+        <p id="demo2" style="font-size: 20px; display: none;">Hello!</p>
+
+        <button type="button" onclick="document.getElementById('demo2').style.display='block';myfunc2()">Show message</button>
+        <button type="button" onclick="document.getElementById('demo2').style.display='none'; myfunc() ">Hide Message</button>
+
+        <script>
+            function myfunc(){
+                document.getElementById('demo1').innerHTML='(´⊙ω⊙`)！';
+                
+            }
+
+            function myfunc2(){
+                document.getElementById('demo1').innerHTML='٩꒰ʘʚʘ๑꒱۶';
+            }
+        </script>
+    
+        <div class="container">
+            <img id="img2" src="https://dailytrojan.com/wp-content/uploads/2021/06/txt-scaled.jpeg" style="width: 500px; "></img>
+            <button type="button" style="width: 150px;" onclick= "myimg()">Change</button>
+        </div>
+      
+
+        <script src="jsprac.js"></script>
+
+        <h3>Output</h3>
+
+        <p id="p1" style="width:20px"></p>
+
+        <script>
+            var num1= 5;
+            var num2= 6;
+            function add(){
+            document.getElementById("p1").innerHTML=num1+num2;
+            }
+        </script>
+
+        <button type="button" style="width: 60px; color:deeppink; background-color:khaki" onclick="add()"> Click</button> <br>
+
+        <script>
+            function experiment(){
+                document.write(num1-num2);
+            }
+        </script>
+
+        <button type="button" style="width: 100px; background-color:hotpink" onclick="experiment()">Dont click</button>
+        <button onclick="window.print()">Print</button>
+        <script>
+            alert("HI!");
+
+            
+        </script>
+        <!DOCT
+   
+    <form>
+        <input type="checkbox" id="myCheckbox">
+        <label for="myCheckbox">Click me to check the box</label>
+        <br>
+        <input type="text" id="myTextInput">
+        <label for="myTextInput">Click me to focus on the text input</label>
+    </form>
+
+
+
+
+    </body>
+
+</html>
+
