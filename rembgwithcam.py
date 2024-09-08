@@ -183,7 +183,7 @@ class Main(ctk.CTk):
 
                 except Exception as error:
                     print("ERROR")
-        # os.remove(file_path)
+        os.remove(file_path)
 
     def to_png2(self, fileselected):
         for file_name in os.listdir(fileselected):
@@ -198,7 +198,7 @@ class Main(ctk.CTk):
                     print("png image saved")
                 except Exception as error:
                     print("ERROR")
-
+        os.remove(file_path)
     def replacebg(self, fileselected, bg_color="white"):
         for file_name in os.listdir(fileselected):
             file_path = fileselected / file_name
@@ -224,6 +224,7 @@ class Main(ctk.CTk):
                     print(f"Image with {bg_color} background saved!")
                 except Exception as error:
                     print(f"ERROR: {error}")
+        os.remove(file_path)
 
     def closing(self):
 
